@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<section>
+	<h1 id="text1">This Text will change</h1>
+	<button onclick="change()">cklick me</button>
+<script>
+	function change(){
+		document.getElementById('text1').innerHTML="'The changed text'";
+	}
+</script>
+    </section>
+
+<section>
+	<h2 id="text2">THIS TEXT WILL BLOW</h2>
+	<button onclick="demo1()">CLick here</button>
+	<script> 
+		function demo1(){
+			document.getElementById("text2").style.fontSize="80px"
+		}
+	</script>
+</section> 
+<section>
+	<h1 id="text3">This is text will hide</h1>
+	<button onclick="demo3()">click here</button>
+	<script>
+		function demo3(){
+			document.getElementById("text3").style.display="none"
+		}
+	</script>
+</section>
+
+<section>
+	<h1 style="display: none;" id="text4">HIDDEN TEXT</h1>
+	<button onclick="demo4()">click me</button>
+
+	<script>
+		function demo4(){
+			document.getElementById("text4").style.display="block"
+		}
+	</script>
+</section>
+
+<section>
+	<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+</section>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
